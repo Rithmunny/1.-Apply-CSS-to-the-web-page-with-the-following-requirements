@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Example</title>
+    <style>
+        /* Base styles for the entire page */
+        body {
+            background-color: red;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Media Query for responsive design */
+        @media (max-width: 768px) {
+            body {
+                background-color: blue; /* Change background color for smaller screens */
+            }
+        }
+
+        /* Animation */
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        /* Inline Blocks */
+        .inline-block-container {
+            text-align: center;
+            box-shadow: 0 0 0 10px(rgb(80, 80, 80));
+        }
+
+        .inline-block {
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(255, 255, 255);
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="animated-box">Hi Animation</div>
+
+    <div class="inline-block-container">
+        <div class="inline-block">I'm inline-block1</div>
+        <div class="inline-block">I'm inline-block1</div>
+        <div class="inline-block">I'm inline-block1</div>
+    </div>
+</body>
+</html>
